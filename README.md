@@ -31,6 +31,6 @@ PickFresh is an Android application built to empower local farmers by connecting
 ![Farmer Dashboard](assets/Dashboard.png)
 
 ### 🗺️ Location & Maps Integration
-![Map View](assets/Maps integration.png)
+![Map View](assets/Maps.png)
 
 
