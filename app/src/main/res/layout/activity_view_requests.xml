@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".Buyer.ViewItems">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:scaleType="center"
+        android:background="@color/white"
+        android:src="@drawable/fresh"
+        android:id="@+id/image3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RatingBar
+        android:secondaryProgressTint="@color/gold"
+        android:progressTint="@color/gold"
+        android:id="@+id/rating2"
+        android:progressBackgroundTint="#94C3C2C2"
+        android:numStars="5"
+        android:isIndicator="true"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"/>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/card"
+    android:visibility="gone"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="20dp"
+    android:clickable="true"
+    app:cardCornerRadius="40dp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#478A1A"
+    android:focusable="true">
+    <TextView
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/textview45"
+        android:text="Send Requests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+</androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cycle"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>
+</ScrollView>

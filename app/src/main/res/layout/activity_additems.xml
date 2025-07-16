@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@color/back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
+    android:padding="20sp"
+    tools:context=".Seller.Additems">
+<LinearLayout
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:ignore="ScrollViewSize">
+<com.google.android.material.imageview.ShapeableImageView
+    android:layout_width="100dp"
+    android:src="@drawable/vegetable"
+    android:id="@+id/shapeimage2"
+    android:elevation="20sp"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="#B1E191"
+    android:adjustViewBounds="true"
+    app:contentPadding="10dp"
+    android:scaleType="centerInside"
+    app:shapeAppearanceOverlay="@style/circle"
+    android:layout_height="100dp"
+    tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute" />
+    <com.google.android.material.textfield.TextInputLayout
+      style="@style/inputlay"
+        android:id="@+id/namehint">
+        <com.google.android.material.textfield.TextInputEditText
+        style="@style/inputedit"
+            android:id="@+id/name2"
+            android:hint="Name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputlay"
+        app:helperTextTextColor="@color/black"
+        app:helperText="Price Can be calculated according to per kg/ltr "
+        android:id="@+id/pricehit">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/price"
+            style="@style/inputedit"
+            android:digits="0123456789"
+            android:hint="Price"
+
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="150dp"
+    android:layout_marginTop="50sp"
+    android:text="Add Items"
+    android:id="@+id/additems"
+    android:textSize="18sp"
+    android:textAllCaps="false"
+    android:layout_gravity="center"
+    android:backgroundTint="#5F8E3F"
+    android:background="@drawable/curve"
+    android:layout_height="50sp"/>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="newfont">
+        <item name="android:textColor">@color/black</item>
+        <item name="selectableItemBackground">@color/back</item>
+       <item name="simpleItemSelectedRippleColor">@color/back</item>
+
+    </style>
+
+    <style name="circle" >
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+    <style name="inputlay" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">10dp</item>
+
+        <item name="boxStrokeColor">@color/black</item>
+        <item name="boxStrokeWidth">2dp</item>
+       <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="inputedit">
+        <item name="maxLines">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+</resources>

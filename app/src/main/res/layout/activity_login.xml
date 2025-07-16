@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EBECEA"
+android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@style/login"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <TextView
+
+        android:textColor="@color/black"
+        android:text="Select a Language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+    <Spinner
+      android:spinnerMode="dropdown"
+        android:id="@+id/spinner"
+        android:layout_margin="5dp"
+        android:theme="@style/newfont"
+        android:dropDownSelector="?android:attr/selectableItemBackground"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/curve"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+    <TextView
+        android:id="@+id/titlew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksandbold1"
+        android:gravity="center"
+        android:text="LOGIN TO PICKFRESH"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:id="@+id/email"
+        android:fontFamily="@font/quicksandmedium3"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Enter your email"
+            android:id="@+id/email2"
+            android:fontFamily="@font/quicksandsemibold5"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:text="Password"
+        android:id="@+id/password"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/quicksandmedium3"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_height="49dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Enter your password"
+            android:id="@+id/password2"
+            android:maxLines="1"
+            android:fontFamily="@font/quicksandsemibold5"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:background="@drawable/curve"
+        android:backgroundTint="#C7E9B0"
+        android:text="Login"
+        android:id="@+id/btn"
+        android:textColor="@color/black"
+        android:fontFamily="@font/quicksandmedium3"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_height="60dp"/>
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textSize="19sp"
+        android:fontFamily="@font/quicksandmedium3"
+        android:text="Don't have an account?"
+        android:layout_width="wrap_content"
+        android:id="@+id/dont"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+        <TextView
+            android:textColor="#9FCA81"
+            android:text=" Create Now"
+            android:textSize="19sp"
+            android:id="@+id/create"
+            android:fontFamily="@font/quicksandmedium3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="19sp"
+            android:fontFamily="@font/quicksandmedium3"
+            android:text="Create a Seller Account?"
+            android:layout_width="wrap_content"
+            android:id="@+id/dont2"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:textColor="#9FCA81"
+            android:text=" Create Now"
+            android:textSize="19sp"
+            android:id="@+id/create2"
+            android:fontFamily="@font/quicksandmedium3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    </LinearLayout>

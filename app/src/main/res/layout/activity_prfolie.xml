@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    tools:context=".Buyer.ProflieActivity">
+<com.google.android.material.textfield.TextInputLayout
+style="@style/inputlay"
+    android:id="@+id/namehint"
+    >
+    <EditText
+        android:id="@+id/nametext"
+        android:hint="Name"
+        style="@style/inputedit"
+        tools:ignore="HardcodedText" />
+</com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+    style="@style/inputlay"
+    android:id="@+id/emailhint"
+    >
+    <EditText
+        android:id="@+id/emailtext"
+        android:hint="Email"
+        style="@style/inputedit"
+        tools:ignore="HardcodedText,TextFields" />
+</com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputlay"
+        android:id="@+id/mobilehint"
+        >
+        <EditText
+            android:id="@+id/mobiletxt"
+            android:hint="Mobile Number"
+            style="@style/inputedit"
+            tools:ignore="HardcodedText,TextFields" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

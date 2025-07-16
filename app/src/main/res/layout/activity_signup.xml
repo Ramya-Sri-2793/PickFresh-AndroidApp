@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:padding="20sp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+<TextView
+    android:gravity="center"
+    android:text="Welcome to pickfresh"
+    android:textAllCaps="true"
+    android:id="@+id/signtitle"
+    android:textSize="35sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText" />
+    <TextView
+        android:text="Name"
+        android:id="@+id/namett"
+        android:textSize="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,SpUsage" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:hintEnabled="false"
+        app:hintAnimationEnabled="false"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Enter your Name"
+            android:id="@+id/name1"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:text="Email"
+        android:textSize="19dp"
+        android:id="@+id/emailti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,SpUsage" />
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    app:hintEnabled="false"
+    app:hintAnimationEnabled="false"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+    android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:hint="Enter your email"
+        android:id="@+id/email1"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+</com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:textSize="19dp"
+        android:id="@+id/passworti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,SpUsage" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:hintEnabled="false"
+        app:hintAnimationEnabled="false"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Enter your Password"
+            android:id="@+id/passwor"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+            android:text="Phone Number"
+        android:textSize="19dp"
+        android:id="@+id/mobilenum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,SpUsage" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:hintEnabled="false"
+        app:hintAnimationEnabled="false"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Enter your Phone"
+            android:id="@+id/mobile"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Register"
+        android:id="@+id/register"
+        android:textSize="18sp"
+        android:fontFamily="@font/quicksandmedium3"
+        android:backgroundTint="@color/back"
+        android:background="@drawable/curve"/>
+    <LinearLayout
+        android:layout_gravity="start"
+        android:layout_marginTop="50sp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/already"
+            android:textSize="18sp"
+            android:text="Already have an account?"
+            android:fontFamily="@font/quicksandmedium3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="18sp"
+            android:text="Login Now"
+            android:id="@+id/login"
+            android:textColor="#89BF64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout></ScrollView>

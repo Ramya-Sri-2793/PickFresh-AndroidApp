@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/back"
+    android:layout_height="match_parent"
+    tools:context=".Seller.SellerMainActivity"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="50sp"
+    android:layout_gravity="center"
+        >
+
+        <LinearLayout
+
+            android:id="@+id/switchback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C83535"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switche"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0.2"
+                app:thumbTint="@color/back"
+                app:trackTint="@color/white" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" >
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/reques"
+            app:cardBackgroundColor="@color/black"
+            android:layout_height="90dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        app:tint="@color/white"
+        android:padding="15sp"
+        android:src="@drawable/request"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/requeststxt"
+        android:textColor="@color/white"
+        android:text="Requests"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/acceptedbtn"
+            android:layout_width="300dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/black"
+            android:layout_height="90dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    app:tint="@color/white"
+                    android:padding="15sp"
+                    android:src="@drawable/accept"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/acceptedtxt"
+                    android:textColor="@color/white"
+                    android:text="Accepted"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/additem"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/black"
+            android:layout_height="90dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    app:tint="@color/white"
+                    android:padding="15sp"
+                    android:src="@drawable/order"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Add Item"
+                    android:id="@+id/additemtxt"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/black"
+            android:layout_height="90dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    app:tint="@color/white"
+                    android:padding="15sp"
+                    android:src="@drawable/view"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Items"
+                    android:id="@+id/itemtxt"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:id="@+id/settings"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/black"
+            android:layout_height="90dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    app:tint="@color/white"
+                    android:padding="15sp"
+                    android:src="@drawable/settings"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Settings"
+                    android:id="@+id/settingtxt"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
